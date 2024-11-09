@@ -82,6 +82,7 @@ main {
     border: var(--color-primary) 1px solid;
     margin: 1rem 0.5rem;
     border-radius: 1rem 1rem 0 0;
+    color: var(--color-primary);
 }
 
 .card-title {
@@ -157,20 +158,19 @@ main {
 
 footer {
     background-color: var(--color-primary);
-    color: var(--color-white);
     margin: 0 auto;
     padding: 1rem;
     max-width: var(--width);
 }
 
-footer p {
+footer p,
+footer p span {
     display: flex;
     justify-content: center;
     margin: 0;
+    color: var(--color-white);
 }
 
 #lastModified {
-    color: var(--color-contrast);
-    font-weight: var(--font-regular);
     margin-top: 0.5rem;
 }
