@@ -171,6 +171,6 @@ footer p {
 
 #lastModified {
     color: var(--color-contrast);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-regular);
     margin-top: 0.5rem;
 }
