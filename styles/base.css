@@ -128,7 +128,7 @@ main {
     grid-template-columns: 1fr 2fr;
 }
 
-.subsection h5 {
+.image-description {
     font-size: 0.7rem;
     font-weight: var(--font-regular);
     margin: 0 auto;
