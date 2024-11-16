@@ -30,6 +30,7 @@ header {
 }
 
 header,
+footer,
 main {
     margin: 0 auto;
     max-width: 1050px;
@@ -122,9 +123,7 @@ figure img {
 
 footer {
     background-color: var(--color-primary);
-    margin: 0 auto;
     padding: 1rem;
-    max-width: var(--width);
 }
 
 footer p,
