@@ -40,17 +40,33 @@ footer {
 .data,
 .weather {
     border: 1px solid var(--color-primary);
-    padding: 1rem;
+    padding: 0;
     font-weight: 700px;
     text-align: center;
     margin: 1rem 0;
+}
+
+.weather-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-title h2 {
+    position: relative;
+}
+
+.weather-title h2::after {
+    content: url('/icons/1530391_weather_clouds_sun_sunny_icon.svg');
+    height: 10px;
+    width: auto;
 }
 
 table {
     display: grid;
     justify-content: center;
     grid-template-columns: 1 fr 1 fr;
-    font-size: small;
+    font-size: medium;
 }
 
 tr {
@@ -80,9 +96,15 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 47rem) {
+@media (min-width: 850px) {
     .hero {
         position: relative;
+    }
+
+    .weather-title {
+        display: flex;
+        align-items: center;
+        justify-content: left;
     }
 
     h2 {
@@ -92,6 +114,14 @@ footer {
         background-color: var(--color-primary);
         color: var(--color-text);
         margin: 0 3rem 0 -1rem;
+    }
+
+    .weather-title h2::after {
+        display: inline-block;
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        background-color: var(--color-white-transparent)
     }
 
     .data,
