@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.montserrat {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
 :root {
     --color-primary: #011126;
     --color-text: #F28705;
@@ -52,24 +46,10 @@ footer {
     margin: 1rem 0;
 }
 
-.weather-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.weather-title h2 {
-    position: relative;
-}
-
 .weather-title img {
-    height: 0;
-}
-
-.weather-title h2::after {
-    content: url('/wdd131/icons/1530391_weather_clouds_sun_sunny_icon.svg');
-    height: 10px;
-    width: auto;
+    display: flex;
+    justify-content: center;
+    height: 100px;
 }
 
 table {
@@ -125,7 +105,12 @@ footer {
         margin: 0 3rem 0 -1rem;
     }
 
+    .weather img {
+        height: 0;
+    }
+
     .weather-title h2::after {
+        content: url('/wdd131/icons/1530391_weather_clouds_sun_sunny_icon.svg');
         display: inline-block;
         margin-left: 10px;
         width: 30px;
