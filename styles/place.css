@@ -57,7 +57,7 @@ footer {
 }
 
 .weather-title h2::after {
-    content: url('/icons/1530391_weather_clouds_sun_sunny_icon.svg');
+    content: url('/wdd131/icons/1530391_weather_clouds_sun_sunny_icon.svg');
     height: 10px;
     width: auto;
 }
