@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
 :root {
     --color-primary: #011126;
@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Delius", sans-serif;
     margin: 1rem;
 }
 
