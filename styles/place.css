@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --color-primary: #011126;
@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: "Delius", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 1rem;
 }
 
@@ -41,7 +41,7 @@ footer {
 .weather {
     border: 1px solid var(--color-primary);
     padding: 0;
-    font-weight: 700px;
+    font-weight: bold;
     text-align: center;
     margin: 1rem 0;
 }
@@ -56,6 +56,10 @@ footer {
     position: relative;
 }
 
+.weather-title img {
+    height: 0;
+}
+
 .weather-title h2::after {
     content: url('/wdd131/icons/1530391_weather_clouds_sun_sunny_icon.svg');
     height: 10px;
@@ -65,7 +69,6 @@ footer {
 table {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1 fr 1 fr;
     font-size: medium;
 }
 
