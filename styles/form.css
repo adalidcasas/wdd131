@@ -3,8 +3,8 @@
 :root {
     --color-primary: #011126;
     --color-text: #F28705;
-    --color-primary-transparent: #01112690;
-    --color-white-transparent: #ffffff99;
+    --color-primary-transparent: #01112624;
+    --color-form: #F2F2F2;
 }
 
 * {
@@ -22,7 +22,7 @@ body {
 header,
 main,
 footer {
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 header,
@@ -33,7 +33,107 @@ footer {
     color: var(--color-text);
 }
 
+/*----------- FORM STYLING --------------*/
 .myform {
+    background-color: var(--color-form);
+    border-radius: 10px;
+}
+
+.myform fieldset {
+    margin: .5rem auto;
+    border: none;
+    padding: .5rem 1rem 2rem .5rem;
+
+}
+
+.myform label,
+.myform p {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-primary);
+    font-size: .9rem;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.myform label span {
+    color: var(--color-text);
+}
+
+.myform input[type="text"],
+.myform input[type="tel"],
+.myform input[type="email"],
+.myform input[type="url"],
+.myform input[type="date"],
+.myform input[type="textarea"],
+.myform select {
     background-color: var(--color-white-transparent);
-    margin: 1rem auto;
+    display: block;
+    border: solid 1px var(--color-primary);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--color-primary);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.myform input[type="radio"],
+.myform input[type="checkbox"] {
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* stars */
+.stars {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 400px;
+}
+
+.stars label {
+    font-size: large;
+}
+
+.myform input[type="radio"] {
+    border: 0px;
+    width: 1.5rem;
+    height: 100%;
+}
+
+.myform input[type="submit"] {
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px var(--color-primary-transparent);
+    font-weight: bold;
+    font-size: large;
+}
+
+.myform input[type="submit"]:hover {
+    background-color: var(--color-text);
+    color: var(--color-primary);
+}
+
+.myform input:required {
+    border-right: solid 10px darkred;
+}
+
+.myform input:required:valid {
+    border-right: solid 10px green;
+}
+
+@media only screen and (min-width: 64) {
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 64rem;
+    }
 }

@@ -25,28 +25,45 @@
             <fieldset>
                 <label>Product Name
                     <select id="product" name="product" required>
-                        <option value="-1" disabled>Choose a Product...</option>
+                        <option value="-1" selected disabled>Choose a Product...</option>
                     </select>
                 </label>
-
-                <div>Overall Rating</div>
-                <label><input type="radio" id="rating-1" name="rating" value="1" required> &star;</label>
-                <label><input type="radio" id="rating-2" name="rating" value="2" required> &star;&star;</label>
-                <label><input type="radio" id="rating-3" name="rating" value="3" required> &star;&star;&star;</label>
-                <label><input type="radio" id="rating-4" name="rating" value="4" required>
-                    &star;&star;&star;&star;</label>
-                <label><input type="radio" id="rating-5" name="rating" value="5" required>
-                    &star;&star;&star;&star;&star;</label>
+            </fieldset>
+            <fieldset>
+                <p>Overall Rating</p>
+                <div class="stars">
+                    <div class="stars-option">
+                        <label for="rating-1">&star;</label>
+                        <input type="radio" id="rating-1" name="rating" value="1" required>
+                    </div>
+                    <div class="stars-option">
+                        <label for="rating-2">&star;&star;</label>
+                        <input type="radio" id="rating-2" name="rating" value="2" required>
+                    </div>
+                    <div class="stars-option">
+                        <label for="rating-3">&star;&star;&star;</label>
+                        <input type="radio" id="rating-3" name="rating" value="3" required>
+                    </div>
+                    <div class="stars-option">
+                        <label for="rating-4">&star;&star;&star;&star;</label>
+                        <input type="radio" id="rating-4" name="rating" value="4" required>
+                    </div>
+                    <div class="stars-option">
+                        <label for="rating-5">&star;&star;&star;&star;&star;</label>
+                        <input type="radio" id="rating-5" name="rating" value="5" required>
+                    </div>
+                </div>
             </fieldset>
             <fieldset>
                 <label>Date of Installation <input type="date" id="date" name="installation" placeholder="mm/mddm/yyyy"
                         required></label>
             </fieldset>
             <fieldset>
-                <legend>Wich features did you find useful in the product? (Check all that apply)</legend>
+                <p>Wich features did you find useful in the product? (Check all that apply)</p>
                 <label><input type="checkbox" id="chk-durability" name="durability" value="no"> Durabillity</label>
                 <label><input type="checkbox" id="chk-easy-of-use" name="ease-of-use" value="no"> Esy of Use</label>
-                <label><input type="checkbox" id="chk-performance" name="performance" value="no"> Performance</label>
+                <label><input type="checkbox" id="chk-performance" name="performance" value="no">
+                    Performance</label>
                 <label><input type="checkbox" id="chk-design" name="design" value="no"> Design</label>
             </fieldset>
             <fieldset>
