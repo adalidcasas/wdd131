@@ -1,0 +1,64 @@
+:root {
+    /* CSS HEX */
+    --color-primary: #213A3Bff;
+    --color-secondary: #335C2Eff;
+    --color-backgrouds: #A0BFE5ff;
+    --color-emphasis: #98983Bff;
+    --color-others: #5880A2ff;
+}
+
+* {
+    margin: 0.5rem auto;
+    max-width: 1050px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Courier, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    padding: 1rem 0;
+}
+
+.background-primary {
+    background-color: var(--color-primary);
+}
+
+.background-secondary {
+    background-color: var(--color-secondary);
+}
+
+.background-standard {
+    background-color: var(--color-backgrouds);
+}
+
+.background-emphasis {
+    background-color: var(--color-emphasis);
+}
+
+.background-others {
+    background-color: var(--color-others);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-backgrouds {
+    color: var(--color-backgrouds);
+}
+
+.text-emphasis {
+    color: var(--color-emphasis);
+}
+
+.text-others {
+    color: var(--color-others);
+}
