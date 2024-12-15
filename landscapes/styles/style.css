@@ -1,0 +1,270 @@
+:root {
+    /* CSS HEX */
+    --color-primary: #335C2E;
+    --color-secondary: #213A3B;
+    --color-backgrouds: #A0BFE5;
+    --color-emphasis: #98983B;
+    --color-others: #5880A2;
+    --color-white: #fff;
+}
+
+* {
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Courier, monospace;
+}
+
+/*header*/
+header {
+    background-color: var(--color-white);
+    border-top: 30px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    border-radius: .5rem .5rem 0 0;
+    margin-top: .5rem;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    border: 2px solid var(--color-primary);
+    border-bottom: 0;
+    display: none;
+}
+
+.navigation a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/*ham menu*/
+#menu {
+    border: 0;
+    background: var(--color-white);
+    color: var(--color-primary);
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.open a {
+    display: flex;
+    flex-direction: inherit;
+    margin: 0;
+}
+
+/*main*/
+main {
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-description {
+    position: absolute;
+    top: 0.5rem;
+    left: .5rem;
+    right: .5rem;
+    color: var(--color-white);
+    text-align: center;
+    background-color: #000000A5;
+    padding: 1rem;
+    border-radius: 0 2rem 0 2rem;
+}
+
+.main-description h1,
+.main-description p {
+    margin: .5rem;
+}
+
+/*section places*/
+.main-places {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-places-description {
+    width: 90%;
+    margin: 10% 0% 5% 5%;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.main-places img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 0 5% 5%;
+    border-radius: 5rem 0 5rem 0;
+    border: 2px solid var(--color-secondary);
+}
+
+.main-places-description p {
+    margin-top: 1rem;
+}
+
+.button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: .3rem;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover {
+    background-color: var(--color-emphasis);
+}
+
+.main-quote-quote p {
+    text-align: center;
+    color: var(--color-white);
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+/*main contact*/
+.main-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #335C2E20;
+    color: black;
+    padding: 1rem 5rem;
+    margin-bottom: 2rem;
+}
+
+.main-contact p,
+.main-contact h2 {
+    margin-top: 1.5rem;
+}
+
+
+/*CONTACT PAGE*/
+
+
+.contact-form {
+    margin: 2rem .5rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 6px;
+    padding: .5rem;
+}
+
+.contact-form fieldset {
+    border: none;
+}
+
+.contact-form legend {
+    color: var(--color-secondary);
+    padding: 0 .5rem;
+    font-size: large;
+}
+
+.contact-form label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-secondary);
+    font-size: medium;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form input[type="textarea"],
+.contact-form input[type="date"],
+.contact-form input[type="number"],
+.contact-form select {
+    display: block;
+    border: solid 1px var(--color-primary);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--color-secondary);
+    width: 100%;
+    appearance: none;
+    font-size: medium;
+}
+
+.contact-form input[type="textarea"] {
+    height: 5rem;
+}
+
+.contact-form input[type="submit"] {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 0.3rem;
+    padding: 1rem 3rem;
+    width: 100%;
+    margin: 1rem auto;
+    font-size: medium;
+    box-shadow: 1px 1px 4px #999;
+}
+
+
+
+.contact-form input:required {
+    border-right: solid 10px darkred;
+}
+
+.contact-form input:required:valid {
+    border-right: solid 10px darkgreen;
+}
+
+
+/*footer*/
+footer {
+    background-color: var(--color-primary);
+    padding: .5rem;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+footer p,
+footer p span {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: var(--color-white);
+}
+
+#lastModified {
+    margin-top: 0.5rem;
+}

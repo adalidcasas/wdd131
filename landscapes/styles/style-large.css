@@ -1,0 +1,17 @@
+@media (min-width: 1050px) {
+    * {
+        max-width: 1050px;
+    }
+
+    .logo img {
+        width: 400px;
+    }
+
+    .navigation a {
+        padding: .5rem 4rem;
+    }
+
+    .main-description {
+        left: 30rem;
+    }
+}

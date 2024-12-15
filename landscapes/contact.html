@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adalid Casas">
+    <meta name="description" content="WDD 131 - Finel Project | Amazing Landscapes">
+    <title>Amazing Landscapes - Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-medium.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo amazing landscapes">
+        </div>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="places.html">Places</a>
+            <a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <form method="get" action="contact-message.html" class="contact-form">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone <input type="tel" name="phone" placeholder="555 123456789"></label>
+                <label>Email* <input type="email" name="phone" placeholder="someone@myemail.com" required></label>
+                <label>Comments <input type="textarea" name="url" placeholder="Hello! My suggestion is..."></label>
+            </fieldset>
+            <input type="submit" value="Contact us">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Adalid Casas | La Paz, Bolivia</p>
+    </footer>
+</body>
+
+</html>
