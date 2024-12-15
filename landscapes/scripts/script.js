@@ -19,6 +19,18 @@ navigation.addEventListener('click', function (e) {
     clickedElement.classList.toggle('active');
 })
 
+function countVisits(event) {
+    let visits = localStorage.getItem('countVisits');
+    if (!visits) {
+        visits = 0;
+    }
+    visits++;
+    localStorage.setItem('countVisits', visits);
+    document.querySelector('#visitors').textContent = `Welcome visitor number ${visits}.`;
+}
+
+countVisits();
+
 
 const landscapesOptions = [
     {
