@@ -18,3 +18,41 @@ navigation.addEventListener('click', function (e) {
     });
     clickedElement.classList.toggle('active');
 })
+
+
+const landscapesOptions = [
+    {
+        id: "france",
+        name: "France"
+    },
+    {
+        id: "england",
+        name: "Emglad"
+    },
+    {
+        id: "germany",
+        name: "Germany"
+    },
+    {
+        id: "mexico",
+        name: "Mexico"
+    },
+    {
+        id: "peru",
+        name: "Peru"
+    }
+];
+
+createOptions(landscapesOptions);
+
+function createOptions(landscapesOptions) {
+    let newOption = document.querySelector("#options");
+    landscapesOptions.forEach(element => {
+        let option = document.createElement("option");
+        option.textContent = element.name;
+        option.value = element.name;
+        option.id = element.id;
+        newOption.appendChild(option);
+    });
+}
+

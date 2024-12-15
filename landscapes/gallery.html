@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Adalid Casas">
-    <meta name="description" content="WDD 131 - Finel Project | Awesome Landscapes">
-    <title>WDD 131 - Dynamic Web Fundamentals - Adalid Casas</title>
+    <meta name="description" content="WDD 131 - Finel Project | Amazing Landscapes">
+    <title>Amazing Landscapes - places</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,17 +21,33 @@
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="logo amazing landscapes">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo amazing landscapes" loading="lazy">
+            </a>
         </div>
         <button id="menu"></button>
         <nav class="navigation">
             <a href="index.html" class="active">Home</a>
-            <a href="places.html">Places</a>
+            <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a></li>
         </nav>
     </header>
     <main>
-        <h1>Places</h1>
+        <div class="contact-title">
+            <h1>Gallery</h1>
+            <p>Have questions or want to connect with us?. Please complete the next contact form.</p>
+        </div>
+
+        <form method="get" class="contact-form">
+            <fieldset>
+                <label>Country
+                    <select id="options" name="options" required>
+                        <option value="-1" selected disabled>Choose a Country...</option>
+                    </select>
+                </label>
+            </fieldset>
+        </form>
+
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> | Adalid Casas | La Paz, Bolivia</p>

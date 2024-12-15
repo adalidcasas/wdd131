@@ -63,7 +63,7 @@ header nav {
 /*ham menu*/
 #menu {
     border: 0;
-    background: var(--color-white);
+    background-color: var(--color-white);
     color: var(--color-primary);
     position: absolute;
     top: 2.5rem;
@@ -180,10 +180,16 @@ main {
 
 
 /*CONTACT PAGE*/
-
+.contact-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color-secondary);
+    padding: 2rem;
+}
 
 .contact-form {
-    margin: 2rem .5rem;
+    margin: 1rem;
     border: 1px solid var(--color-primary);
     border-radius: 6px;
     padding: .5rem;
@@ -230,15 +236,18 @@ main {
 .contact-form input[type="submit"] {
     background-color: var(--color-primary);
     color: var(--color-white);
-    border-radius: 0.3rem;
-    padding: 1rem 3rem;
     width: 100%;
-    margin: 1rem auto;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
     font-size: medium;
-    box-shadow: 1px 1px 4px #999;
+    font-weight: bold;
+    border-radius: .3rem;
+    transition: background-color 0.5s ease;
 }
 
-
+.contact-form input[type="submit"]:hover {
+    background-color: var(--color-emphasis);
+}
 
 .contact-form input:required {
     border-right: solid 10px darkred;
@@ -247,6 +256,8 @@ main {
 .contact-form input:required:valid {
     border-right: solid 10px darkgreen;
 }
+
+/*PLACES GALLERY PAGE*/
 
 
 /*footer*/
@@ -263,8 +274,4 @@ footer p span {
     margin: 0;
     padding: 0;
     color: var(--color-white);
-}
-
-#lastModified {
-    margin-top: 0.5rem;
 }
